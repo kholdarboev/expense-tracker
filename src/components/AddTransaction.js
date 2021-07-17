@@ -15,7 +15,9 @@ id:Math.floor(Math.random()*10000000),
 text,
 amount:+amount
 }
-addTransaction(newTransaction)
+addTransaction(newTransaction);
+setText('');
+setAmount('')
 }
 
     return(
@@ -31,7 +33,7 @@ addTransaction(newTransaction)
                     <input type="number" value={amount} onChange={(e)=>setAmount(e.target.value)} placeholder='Enter amount ...' required/>
                 </label>
             </div>
-            <button className='btn'>Add Transaction</button>
+            <button onClick={onSubmit} className='btn'>Add Transaction</button>
         </form>  
         </>
     )

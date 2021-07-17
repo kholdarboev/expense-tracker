@@ -7,7 +7,7 @@ const {transactions} = useContext(GlobalContext)
 return(
 
 
-    <div>
+    <div >
         <h3>History</h3>
         <ul className='list'>
             {
